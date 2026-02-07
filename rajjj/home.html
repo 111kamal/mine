@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Neelu ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-bg">
+
+<div class="center-card">
+
+  <img class="couple"
+  src="couples.png"
+  alt="Cute couple">
+
+  <h2 id="typeText"></h2>
+
+  <button onclick="go('first.html')">
+    Enter Our Story 💖
+  </button>
+
+</div>
+
+<script>
+const text = "Hi Neelu...\nThis website is not normal...\nIt's my heart, coded for you ❤️";
+let i = 0;
+function type(){
+  if(i < text.length){
+    document.getElementById("typeText").innerHTML +=
+      text.charAt(i) === "\n" ? "<br>" : text.charAt(i);
+    i++;
+    setTimeout(type, 70);
+  }
+}
+type();
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

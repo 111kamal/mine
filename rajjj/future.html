@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Future 🌙</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#021a19;
+  font-family: Arial, sans-serif;
+}
+
+/* IMAGE CONTAINER */
+.future-wrap{
+  position:relative;
+  width:100%;
+  max-width:900px;
+  height:100vh;
+}
+
+/* FULL IMAGE */
+.future-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:contain;   /* 👈 image poori dikhegi */
+}
+
+/* BACK BUTTON */
+.back-btn{
+  position:absolute;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+
+  padding:14px 32px;
+  border-radius:30px;
+  border:none;
+
+  background:rgba(110,198,184,0.9);
+  color:#043332;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+</style>
+</head>
+
+<body>
+
+  <div class="future-wrap">
+    <img src="future.png" alt="Our Future Together">
+    <button class="back-btn" onclick="history.back()">← Back</button>
+  </div>
+
+</body>
+</html>
