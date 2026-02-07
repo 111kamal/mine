@@ -4,7 +4,7 @@ function unlock(){
     window.location="home.html";
   } else {
     document.getElementById("msg").innerText =
-    "Ask your baby for the password 💕";
+    "Wrong password Ask your baby for the password 💕";
   }
 }
 
